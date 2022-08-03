@@ -23,7 +23,7 @@ const Foodie = () => {
         }
         fetchFoods();
     }, []);
-    
+
     return (
         <Box sx={{
             display: 'flex',
@@ -33,8 +33,6 @@ const Foodie = () => {
         }}>
                 {
                     foods.map(food => (
-                        // <div>{food.restaurant.name}</div>
-                        // <MainFeaturedPost key={food.title} food={food}></MainFeaturedPost>
                         <FoodCard key={food.title} food={food}></FoodCard>
                     ))
                 }
